@@ -38,7 +38,28 @@ h1{
     font-size: 16px;
     border: none;
     border-radius: 0 5px 5px 0;
-    background-color: rgb(140, 219, 21);
+    background-color: #8cdb15;
     color: #ffffff;
+    cursor: pointer;
+}
+
+.task-list{
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.task-text{
+    flex-grow: 1;
+    margin-left: 10px;
     cursor: pointer;
 }
