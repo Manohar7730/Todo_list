@@ -33,16 +33,23 @@ function addTask(taskText){
 
     taskList.appendChild(li);
     console.log("Task Created");
+    updateTaskCount();
 }
 
 function toggleComplete() {
     const taskItem = this.parentNode;
     taskItem.classList.toggle("completed");
     console.log("Task Completed")
+    updateTaskCount();
 }
 
 function deleteTask(){
     const taskItem = this.parentNode;
     taskList.removeChild(taskItem);
     console.log("Task Removed")
+    updateTaskCount();
+}
+
+function updateTaskCount(){
+    console.log("Task Updated")
 }
