@@ -14,6 +14,10 @@ function addTask(taskText){
     const li=document.createElement("li");
     li.classList.add("task-item");
 
+    const checkbox = document.createElement('input');
+    checkbox.type = "checkbox";
+    li.appendChild(checkbox);
+
     const span=document.createElement('span');
     span.classList.add("task-text");
     span.textContent = taskText;
