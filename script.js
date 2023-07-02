@@ -51,5 +51,10 @@ function deleteTask(){
 }
 
 function updateTaskCount(){
+    const totalTasks = taskList.childElementCount;
+    const completedTasks = taskList.querySelectorAll('.completed').length;
+    const remainingTasks = totalTasks - completedTasks;
+
+    taskCount.textContent = `Total: ${totalTasks} | Completed: ${completedTasks} | Remaining: ${remainingTasks}`
     console.log("Task Updated")
 }

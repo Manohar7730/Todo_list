@@ -63,3 +63,18 @@ h1{
     margin-left: 10px;
     cursor: pointer;
 }
+
+.delete-btn{
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.task-count {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+}
