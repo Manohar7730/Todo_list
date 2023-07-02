@@ -16,11 +16,13 @@ function addTask(taskText){
 
     const checkbox = document.createElement('input');
     checkbox.type = "checkbox";
+    checkbox.addEventListener("change", toggleComplete);
     li.appendChild(checkbox);
 
     const span=document.createElement('span');
     span.classList.add("task-text");
     span.textContent = taskText;
+    span.addEventListener("click", toggleComplete);
     li.appendChild(span);
 
     const deleteBtn = document.createElement('button');
@@ -30,4 +32,10 @@ function addTask(taskText){
 
     taskList.appendChild(li);
     console.log("Task Created");
+}
+
+function toggleComplete() {
+    const taskItem = this.parentNode;
+    taskItem.classList.toggle("completed");
+    console.log("Task Completed")
 }
