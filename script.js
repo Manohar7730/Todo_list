@@ -23,6 +23,11 @@ function addTask(taskText){
     span.textContent = taskText;
     li.appendChild(span);
 
+    const deleteBtn = document.createElement('button');
+    deleteBtn.classList.add('delete-btn');
+    deleteBtn.textContent = "X";
+    li.appendChild(deleteBtn);
+
     taskList.appendChild(li);
     console.log("Task Created");
 }
