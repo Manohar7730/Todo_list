@@ -28,6 +28,7 @@ function addTask(taskText){
     const deleteBtn = document.createElement('button');
     deleteBtn.classList.add('delete-btn');
     deleteBtn.textContent = "X";
+    deleteBtn.addEventListener("click", deleteTask);
     li.appendChild(deleteBtn);
 
     taskList.appendChild(li);
@@ -38,4 +39,10 @@ function toggleComplete() {
     const taskItem = this.parentNode;
     taskItem.classList.toggle("completed");
     console.log("Task Completed")
+}
+
+function deleteTask(){
+    const taskItem = this.parentNode;
+    taskList.removeChild(taskItem);
+    console.log("Task Removed")
 }
