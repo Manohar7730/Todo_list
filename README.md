@@ -1,4 +1,7 @@
 # Todo_list
+
+https://manohar7730.github.io/Todo_list/
+
 1) Created basic Html with input and add button, along with some tags, class, id
 2) Created CSS page and added some styles to HTML using classes used
 3) ![Screenshot 2023-07-02 103855](https://github.com/Manohar7730/Todo_list/assets/120391462/2928d3bb-fd60-4c2e-a09d-fb0cc6917dc8)
